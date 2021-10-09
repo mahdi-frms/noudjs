@@ -1,0 +1,3 @@
+[submodule "dep/loop"]
+	path = dep/loop
+	url = /home/mahdif/projects/os/ch4/p25/
