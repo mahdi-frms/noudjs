@@ -1,3 +1,3 @@
 [submodule "dep/loop"]
 	path = dep/loop
-	url = /home/mahdif/projects/os/ch4/p25/
+	url = https://github.com/mahdi-frms/loop.git
