@@ -1,15 +1,16 @@
 cmake_minimum_required(VERSION 3.18.0)
-project(godeljs VERSION 0.1.0)
+project(noudjs VERSION 0.1.0)
 
-add_executable(godel
+add_executable(noud
 src/main.c
 src/cwalk.c
+src/evloop.c
 )
 
 add_subdirectory("dep/loop")
 
-SET(GCC_COVERAGE_COMPILE_FLAGS " -g -Werror -Wall")
+target_compile_options(noud PRIVATE -Werror -Wall)
 
-target_include_directories(godel PRIVATE src)
-target_link_directories(godel PRIVATE lib)
-target_link_libraries(godel PRIVATE loop duktape pthread m)
+target_include_directories(noud PRIVATE src)
+target_link_directories(noud PRIVATE lib)
+target_link_libraries(noud PRIVATE loop duktape pthread m)
